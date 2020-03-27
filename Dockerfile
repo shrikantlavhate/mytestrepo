@@ -1,4 +1,4 @@
-FROM centos8
+FROM centos:centos8
 RUN yum install httpd -y
 RUN echo "Shrikant's test Apache container" >> /var/www/html/index.html
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
